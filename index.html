@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <h4>ჯ po/folio</h4>
+            <nav class="navbar-nav">
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="#aboutme" class="navbar-link"><strong>О себе</strong></a></li>
+                    <li class="navbar-item"><a href="#portfolio" class="navbar-link"><strong>Портфолио</strong></a>
+                    </li>
+                    <li class="navbar-item"><a href="#" class="navbar-link"><strong>Контакты</strong></a></li>
+                    <!-- <li class="navbar-item"><a href="#" class="navbar-link"><strong>Пнана</strong></a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="logoc1">
+                <h1>Вёрстка HTML/CSS</h1>
+                <p>От профессионала</p>
+            </div>
+        </div>
+        <div id="aboutme" class="container2">
+            <h1>То, чем я могу быть вам полезен:</h1>
+            <div class="flex-container">
+                <div class="flex-item1">
+                    <div>
+                        <h2>Вёрстка HTML/CSS</h2>
+                        <p>Опытный верстальщик с отличным владением HTML и CSS. Знаю современные технологии и
+                            методологии
+                            разработки веб-интерфейсов, работаю с адаптивной версткой и кроссбраузерностью.</p>
+                        <img class="html-icon" src="img/html-icon1.png" alt="html">
+                        <img class="css-icon" src="img/css-icon1.png" alt="css">
+                    </div>
+                </div>
+                <div class="flex-item2">
+                    <h2>Работа в Photoshop</h2>
+                    <p>Редактор фотографий в Photoshop с опытом работы. Неплохие навыки ретуширования, цветокоррекции и
+                        композиции. Умею соблюдать сроки и требования качества.</p>
+                    <img src="img/photoshop_icon.png" alt="photoshop">
+                </div>
+            </div>
+        </div>
+        <div id="portfolio" class="container3">
+            <h1>Мои работы:</h1>
+            <div class="flex-container">
+                <div class="flex-item3">
+                    <a href="https://m1muxter.github.io/my-first-site/" target="_blank"><img src="img/firstsite.jpg"
+                            alt="firstsite"></a>
+                    <span class="bottomimg">my first site</span>
+                </div>
+                <div class="flex-item4">
+                    <a href="https://m1muxter.github.io/site-visitka/" target="_blank"><img src="img/site-vizitka.jpg"
+                            alt="vizitka"></a>
+                    <span class="bottomimg">site-vizitka</span>
+                </div>
+                <div class="flex-item5">
+                    <a href="https://m1muxter.github.io/hovering/" target="_blank"><img src="img/hovering.jpg"
+                            alt="vizitka"></a>
+                    <span class="bottomimg">hovering</span>
+                </div>
+            </div>
+        </div>
+        <div class="container4">
+            <h1>Обратная связь:</h1>
+            <div class="flex-container">
+                <div class="contacts">
+                    <h2>Контакты</h2>
+                    <p>ПОЧТА:</p>
+                    <p><span class="pink">aaa@pomogite.ru</span></p>
+                    <p>ТЕЛЕФОНЫ:</p>
+                    <p><span class="pink">+7(093)402043</span></p>
+                    <p><span class="pink">+7(123)345632</span></p>
+                    <p>СОЦИАЛЬНЫЕ СЕТИ:</p>
+                    <p><span class="pink">VK: <a href="https://vk.com/bul1o4ka">@bul1o4ka</a></span></p>
+                </div>
+                <div class="feedback">
+                    <h2>Обратная связь:</h2>
+                    <form id="contact-form">
+                        <div class="form_item">
+                            <label for="topic"><i>Тема</i></label><br>
+                            <select required name="topic" id="topic">
+                                <option value="">Заказать услугу</option>
+                                <option value="">Отставить отзыв/замечание</option>
+                                <option value="">Предложить сотрудничество</option>
+                                <option value="">Другое</option>
+                            </select>
+                        </div>
+                        <div class="form_item">
+                            <label for="name"><i>Имя</i></label><br>
+                            <input required type="text" placeholder="Ваше Имя" id="name">
+                        </div>
+                        <div class="form_item">
+                            <label for="email"><i>E-mail</i></label><br>
+                            <input required type="email" placeholder="Ваш E-mail" id="email">
+                        </div>
+                        <div class="form_item">
+                            <label for="text"><i>Текст сообщения</i></label><br>
+                            <textarea required name="text" id="bigtext" cols="33" rows="10"></textarea>
+                        </div>
+                        <div class="form_item">
+                            <label for="text"><i>Номер телефона</i></label><br>
+                            <input required placeholder="Ваш номер телефона" type="tel" id="text">
+                        </div>
+                        <div class="form_item">
+                            <label for="text"><i>Дата</i></label><br>
+                            <input required type="date" id="date">
+                        </div>
+                        <div class="form_item">
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>copyright c nnn-nnn</p>
+    </footer>
+</body>
+
+</html>
